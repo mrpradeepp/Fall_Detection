@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FALLEN !!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_examples">Examples</string>
+    <string name="title_activity_setting">SETTINGS</string>
+    <string name="title_activity_fall_test">Fall Testing</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lenovo.sensor_sample.Examples"
+    tools:showIn="@layout/activity_examples"
+
+    android:background="@mipmap/back_2">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/example_values"
+
+        android:paddingTop="50dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#ED1A76"
+        android:text="Fall Alert Detected"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_alertmessage"
+        android:text="A Text message Will be send To the Emergency Contact Number You Provided with your location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/example_values"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_alertHeading"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Click here to Cancel the SMS alert in 2 min"
+        android:layout_below="@+id/txt_alertmessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:id="@+id/btn_sms"
+        android:layout_below="@+id/txt_alertHeading"
+      android:layout_centerHorizontal="true"
+
+        android:backgroundTint="#ED1A76"
+        android:onClick="sms_send"/>
+
+</RelativeLayout>
+</ScrollView>

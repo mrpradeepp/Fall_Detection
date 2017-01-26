@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lenovo.sensor_sample.Setting"
+    tools:showIn="@layout/activity_setting"
+    android:background="@mipmap/back_2">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Settings_title"
+        android:layout_centerHorizontal="true"
+        android:text="SETTINGS"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#ED1A76"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms_title"
+        android:text="Select the Phone No. to send SMS"
+        android:textSize="16dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Settings_title"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT PHONE NUMBER"
+        android:textSize="16dp"
+        android:id="@+id/setphonenum"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sms_title"
+        android:layout_margin="5dp"
+        android:backgroundTint="#ED1A76"
+        android:onClick="select_phonenum"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ringtone_title"
+        android:text="Select the ringtone for  Alert tone"
+        android:textSize="16dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/setphonenum"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT RINGTONE"
+        android:textSize="16dp"
+        android:id="@+id/setRingtone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ringtone_title"
+        android:layout_margin="5dp"
+        android:backgroundTint="#ED1A76"
+        android:onClick="select_ringtone"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_text"
+        android:text="RESPONSE MODE"
+        android:layout_below="@+id/setRingtone"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ED1A76"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/response_spinner"
+        android:layout_below="@+id/spinner_text"
+        android:layout_margin="5dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_btn"
+        android:text="SAVE SETTINGS"
+        android:layout_below="@+id/response_spinner"
+        android:onClick="save_settings"
+        android:backgroundTint="#ED1A76"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+</ScrollView>
